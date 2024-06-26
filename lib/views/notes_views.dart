@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noteapp/widgets/notes_view_body.dart';
 
 class NoteView extends StatelessWidget {
   const NoteView({super.key});
@@ -6,18 +7,16 @@ class NoteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: const Text('Notes', style: TextStyle(fontSize: 32)),
-          actions: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[900],
-                borderRadius: BorderRadius.circular(15)
-              ),
-              child: IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.search, size: 36)),
-            ),
-          ]),
+      body: NotesViewBody(),
+      // appBar: AppBar(
+      //     title: const Text('Notes', style: TextStyle(fontSize: 32)),
+      //     actions: <Widget>[
+            
+      //       ),
+      //     ]),
+    
     );
   }
 }
+
+
