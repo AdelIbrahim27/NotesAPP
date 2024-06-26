@@ -7,8 +7,17 @@ class NoteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notes', style: TextStyle(fontSize: 32)),
-      ),
+          title: const Text('Notes', style: TextStyle(fontSize: 32)),
+          actions: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[900],
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: IconButton(
+                  onPressed: () {}, icon: const Icon(Icons.search, size: 36)),
+            ),
+          ]),
     );
   }
 }
