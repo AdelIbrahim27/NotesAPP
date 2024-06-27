@@ -8,12 +8,6 @@ class NoteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: NotesViewBody(),
-      // appBar: AppBar(
-      //     title: const Text('Notes', style: TextStyle(fontSize: 32)),
-      //     actions: <Widget>[
-            
-      //       ),
-      //     ]),
     
     );
   }
