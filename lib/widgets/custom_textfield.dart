@@ -10,9 +10,11 @@ final int maxlines;
   @override
   Widget build(BuildContext context) {
     return   TextField(
+      
       maxLines: maxlines,
       cursorColor:  kPrimaryColor,
       decoration: InputDecoration(
+
         hintText: hint,
 hintStyle: const TextStyle(color: kPrimaryColor),
         focusedBorder: OutlineInputBorder(
