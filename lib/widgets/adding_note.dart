@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:noteapp/contasts.dart';
 import 'package:noteapp/widgets/custom_textfield.dart';
 
 class AddingNote extends StatelessWidget {
@@ -9,12 +7,14 @@ class AddingNote extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
           SizedBox(height: 24),
-          CustomTextField()
+          CustomTextField(hint: 'Tittle' ),
+          SizedBox(height: 24),
+          CustomTextField(hint: 'Contant',maxlines: 6,)
         ],
       ),
     );
